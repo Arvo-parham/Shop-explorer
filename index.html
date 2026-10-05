@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <script src="./script.js" defer></script>
+
+    <title>Shop Explorer</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <!-- Header -->
+      <div class="head">
+        <h1>
+          <i class="fa fa-shop" aria-hidden="true"></i>
+          Shop Explorer
+        </h1>
+
+        <a href="cart.html">Your shopping cart</a>
+      </div>
+
+      <!-- Search -->
+      <div class="search-container">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+          />
+        </div>
+
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <!-- Filter & Sort -->
+      <div class="controls">
+
+        <!-- Category Filter -->
+        <div class="control-box">
+          <label for="categoryFilter">
+            <i class="fa-solid fa-filter"></i>
+            Category
+          </label>
+
+          <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="beauty">Beauty</option>
+            <option value="fragrances">Fragrances</option>
+            <option value="groceries">Groceries</option>
+          </select>
+        </div>
+
+        <!-- Sort -->
+        <div class="control-box">
+          <label for="sortSelect">
+            <i class="fa-solid fa-arrow-down-wide-short"></i>
+            Sort by
+          </label>
+
+          <select id="sortSelect">
+            <option value="default">Default</option>
+            <option value="price-low-high">Price: Low → High</option>
+            <option value="price-high-low">Price: High → Low</option>
+            <option value="rating-high-low">Rating: High → Low</option>
+            <option value="name-a-z">Name: A → Z</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- Products -->
+      <div class="products">
+        <h2>Products</h2>
+
+        <div class="products-layout">
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
